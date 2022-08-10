@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <h1>Hello World! <h1/>
+    {% if name %}
+    <h1>Hello {{ name }} <h1/>
+        {% else %}
     <h2> <p>whazzup</p> <h2/>
     <h3> <p>whazzup</p> <h3/>
     <h4> <p>whazzup</p> <h4>
+        {% endif %}
         <body bgcolor=gray> </body>
+        
 </html>
