@@ -7,6 +7,11 @@
     <h3> <p>whazzup</p> <h3/>
     <h4> <p>whazzup</p> <h4>
         {% endif %}
-        <body bgcolor=gray> </body>
+        <ul>
+            {% for product in products %}
+            {{product.given_name}} </br>
+            {% endfor %}
+            </br>
+        </ul>
         
 </html>
